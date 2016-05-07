@@ -1,0 +1,41 @@
+{
+  "name": "browser-my-ip",
+  "version": "0.0.1",
+  "description": "Get client IP in browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "prepublish": "npm run build",
+    "_bundle": "webpack index.js dist/index.js --output-library-target=umd --output-library=getMyIP",
+    "_minify": "uglifyjs -mc -o dist/index.min.js dist/index.js",
+    "build": "npm run _bundle && npm run _minify"
+  },
+  "author": "dracupid <dracupid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "load-script": "^1.0.0"
+  },
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-mocha": "^1.0.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "webpack": "^1.13.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dracupid/browser-my-ip.git"
+  },
+  "keywords": [
+    "ip",
+    "browser",
+    "ip address"
+  ],
+  "bugs": {
+    "url": "https://github.com/dracupid/browser-my-ip/issues"
+  },
+  "homepage": "https://github.com/dracupid/browser-my-ip#readme"
+}
