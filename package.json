@@ -10,6 +10,7 @@
     "_minify": "uglifyjs -mc -o dist/index.min.js dist/index.js",
     "build": "npm run _bundle && npm run _minify"
   },
+  "files": ["index.js"],
   "author": "dracupid <dracupid@gmail.com>",
   "license": "MIT",
   "dependencies": {
