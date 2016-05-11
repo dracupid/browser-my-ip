@@ -5,7 +5,7 @@ module.exports = function (cb) {
   // avoid window.returnCitySN defined
   var conflictCache = typeof returnCitySN !== 'undefined' ? returnCitySN : undefined
   loadScript(API_MY_IP, {}, function (err) {
-    var result = returnCitySN
+    var result = returnCitySN.cip || ''
     returnCitySN = conflictCache
     err == null ? cb(null, result) : cb(err)
   })
