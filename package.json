@@ -1,6 +1,6 @@
 {
   "name": "browser-my-ip",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Get client IP in browser.",
   "main": "index.js",
   "scripts": {
