@@ -10,8 +10,8 @@ Get client IP in browser.
 ## usage
 ```js
 getMyIP(function (err, data) {
-    // data = {"cip": "183.157.160.60", "cid": "330100", "cname": "浙江省杭州市"}
-    console.log(data.cip)
+    // data = "183.157.160.60"
+    console.log(data)
 })
 ```
 
