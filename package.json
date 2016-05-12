@@ -1,6 +1,6 @@
 {
   "name": "browser-my-ip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get client IP in browser.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "_minify": "uglifyjs -mc -o dist/index.min.js dist/index.js",
     "build": "npm run _bundle && npm run _minify"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "author": "dracupid <dracupid@gmail.com>",
   "license": "MIT",
   "dependencies": {
